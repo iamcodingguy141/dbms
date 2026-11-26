@@ -258,8 +258,9 @@ $('#switchProfile').addEventListener('click',()=>{try{localStorage.removeItem('d
 $('#bookmarks').addEventListener('click',()=>{filter=filter==='marks'?'all':'marks';tab='study';cur='all';q='';$('#q').value='';rail();view()});
 $('#pending').addEventListener('click',()=>{filter=filter==='pending'?'all':'pending';tab='study';cur='all';q='';$('#q').value='';rail();view()});
 // Paste the two deployed Apps Script web app URLs below.
-const REGISTRATION_URL = 'PASTE_REGISTRATION_WEB_APP_URL_HERE';
-const ADMIN_URL = 'PASTE_PRIVATE_ADMIN_WEB_APP_URL_HERE';
+const REGISTRATION_URL = 'https://script.google.com/macros/s/AKfycbx1Rmro-Fw1sRSdei-BjrPNCt--W0x2mzHb66m7_kbLs9EDTL-TnFiMx8Fh6_wabi_zvQ/exec';
+
+const ADMIN_URL = 'https://script.google.com/macros/s/AKfycbxuc2XewUCejdIOAcE46cDAXye3NZz3R2fHfNcNE2ZJMRrq8PoEmqgmOTUBGqUHqATF/exec';
 function reportRegistration(p){
  if(!p.registrationId){
    p.registrationId = crypto.randomUUID ? crypto.randomUUID() : Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');
